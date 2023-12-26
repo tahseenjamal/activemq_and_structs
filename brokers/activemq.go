@@ -22,7 +22,7 @@ type MessageBrokerFunctions interface {
 	Connect() error
 	Disconnect() error
 	Send(string, string) error
-	Subscribe(string, func(*stomp.Message) error
+	Subscribe(string, func(*stomp.Message)) error
 }
 
 // NewMessageBroker creates a new instance of MessageBroker.
